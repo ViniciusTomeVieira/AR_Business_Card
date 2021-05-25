@@ -19,7 +19,7 @@ public class CardScript : MonoBehaviour
         int targetFps = VuforiaRenderer.Instance.GetRecommendedFps(VuforiaRenderer.FpsHint.NONE);
         urls = new ArrayList();
         urls.Add("https://api.whatsapp.com/send?phone=5548999726498&text=Bom dia!");
-        urls.Add("fb://page/465887253781000");
+        urls.Add("fb://page/382171845278904");
 
         if (Application.targetFrameRate != targetFps){
             Debug.Log("Setting frame rate to " + targetFps + "fps");
