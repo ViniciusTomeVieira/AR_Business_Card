@@ -43,15 +43,23 @@ public class CardScript : MonoBehaviour
                         cardTitle.text = "Whatsapp";
                         cardContent.text = "Clique para acessar"; 
                         break;
-                    case "Logo_insta": executarAnimacao("instagram"); break;
+                    case "Logo_insta": executarAnimacao("instagram");
+                        cardTitle.text = "Instagram";
+                        cardContent.text = "Clique para acessar"; 
+                        break;
                     case "Logo_facebook": executarAnimacao("facebook");
                         cardTitle.text = "Facebook";
                         cardContent.text = "Clique para acessar"; 
                         break;
-                    case "Logo_linkedin": executarAnimacao("linkedin"); break;
-                    case "Logo_site": executarAnimacao("site"); break;
+                    case "Logo_linkedin": executarAnimacao("linkedin"); 
+                        cardTitle.text = "LinkedIn";
+                        cardContent.text = "Clique para acessar"; 
+                        break;
+                    case "Logo_site": executarAnimacao("site"); 
+                        cardTitle.text = "Site";
+                        cardContent.text = "Clique para acessar";
+                        break;
                     case "Logo_zap_card": abrirSite(cardTitle.text); break;
-
                 }                                    
             }
         }
@@ -63,7 +71,6 @@ public class CardScript : MonoBehaviour
         }else{
             animator.SetBool(botao, true);
         }
-        
     } 
     void abrirSite(string site){
         switch(site){
