@@ -20,6 +20,9 @@ public class CardScript : MonoBehaviour
         urls = new ArrayList();
         urls.Add("https://api.whatsapp.com/send?phone=5548999726498&text=Bom dia!");
         urls.Add("fb://page/382171845278904");
+        urls.Add("instagram://user?username=vini.vieiraaa");
+        urls.Add("https://www.linkedin.com/in/viniciustomevieira/");
+        urls.Add("http://globoesporte.globo.com/");
 
         if (Application.targetFrameRate != targetFps){
             Debug.Log("Setting frame rate to " + targetFps + "fps");
@@ -66,7 +69,9 @@ public class CardScript : MonoBehaviour
         switch(site){
             case "Whatsapp": Application.OpenURL(urls[0].ToString()); break;
             case "Facebook": Application.OpenURL(urls[1].ToString()); break;
+            case "Instagram": Application.OpenURL(urls[2].ToString()); break;
+            case "LinkedIn": Application.OpenURL(urls[3].ToString()); break;
+            case "Site": Application.OpenURL(urls[4].ToString()); break;
         }
-        
     }
 }
