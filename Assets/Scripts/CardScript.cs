@@ -52,7 +52,7 @@ public class CardScript : MonoBehaviour
                         cardContent.text = "Clique para acessar"; 
                         break;
                     case "Logo_linkedin": executarAnimacao("linkedin"); 
-                        cardTitle.text = "LinkedIn";
+                        cardTitle.text = "Linkedin";
                         cardContent.text = "Clique para acessar"; 
                         break;
                     case "Logo_site": executarAnimacao("site"); 
@@ -77,7 +77,7 @@ public class CardScript : MonoBehaviour
             case "Whatsapp": Application.OpenURL(urls[0].ToString()); break;
             case "Facebook": Application.OpenURL(urls[1].ToString()); break;
             case "Instagram": Application.OpenURL(urls[2].ToString()); break;
-            case "LinkedIn": Application.OpenURL(urls[3].ToString()); break;
+            case "Linkedin": Application.OpenURL(urls[3].ToString()); break;
             case "Site": Application.OpenURL(urls[4].ToString()); break;
         }
     }
