@@ -6,8 +6,8 @@ using TMPro;
 
 public class CardScript : MonoBehaviour
 {
-    public AudioSource audioSource;
-    public Animator animator;
+    private AudioSource audioSource;
+    private Animator animator;
     private string btnName;
 
     public TextMeshPro cardTitle, cardContent;
@@ -16,6 +16,9 @@ public class CardScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
+
         int targetFps = VuforiaRenderer.Instance.GetRecommendedFps(VuforiaRenderer.FpsHint.NONE);
         urls = new ArrayList();
         urls.Add("https://api.whatsapp.com/send?phone=5548999726498&text=Bom dia!");
