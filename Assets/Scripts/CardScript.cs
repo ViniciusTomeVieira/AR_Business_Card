@@ -41,23 +41,23 @@ public class CardScript : MonoBehaviour
                     case "Logo_zap": 
                         executarAnimacao("whatsapp"); 
                         cardTitle.text = "Whatsapp";
-                        cardContent.text = "Clique para acessar"; 
+                        cardContent.text = "Clique aqui para acessar"; 
                         break;
                     case "Logo_insta": executarAnimacao("instagram");
                         cardTitle.text = "Instagram";
-                        cardContent.text = "Clique para acessar"; 
+                        cardContent.text = "Clique aqui para acessar"; 
                         break;
                     case "Logo_facebook": executarAnimacao("facebook");
                         cardTitle.text = "Facebook";
-                        cardContent.text = "Clique para acessar"; 
+                        cardContent.text = "Clique aqui para acessar"; 
                         break;
                     case "Logo_linkedin": executarAnimacao("linkedin"); 
                         cardTitle.text = "Linkedin";
-                        cardContent.text = "Clique para acessar"; 
+                        cardContent.text = "Clique aqui para acessar"; 
                         break;
                     case "Logo_site": executarAnimacao("site"); 
                         cardTitle.text = "Site";
-                        cardContent.text = "Clique para acessar";
+                        cardContent.text = "Clique aqui para acessar";
                         break;
                     case "Logo_zap_card": abrirSite(cardTitle.text); break;
                 }                                    
